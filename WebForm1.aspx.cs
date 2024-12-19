@@ -13,5 +13,10 @@ namespace demo
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Write("HELLO WORD");
+        }
     }
 }
