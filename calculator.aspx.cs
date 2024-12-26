@@ -9,6 +9,9 @@ namespace demo
 {
     public partial class calculator : System.Web.UI.Page
     {
+        double x = 0;
+        double y = 0;
+        string op = "";
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,9 +26,7 @@ namespace demo
         {
 
         }
-        double x = 0;
-        double y = 0;
-        string op = "";
+       
 
         protected void Button13_Click(object sender, EventArgs e)
         {
@@ -93,17 +94,18 @@ namespace demo
 
         protected void Button12_Click(object sender, EventArgs e)
         {
-            x=Convert.ToDouble(TextBox1.Text);
-            TextBox1.Text = "";
+            x = Convert.ToDouble(TextBox1.Text);
             op = "+";
+            TextBox1.Text = "";
             Response.Write(x);
+
         }
 
         protected void Button14_Click(object sender, EventArgs e)
         {
             y=Convert.ToDouble(TextBox1.Text);
             double sum = x + y;
-                Response.Write(sum);
+                Response.Write("x="+x+"y="+y);
             
 
         }

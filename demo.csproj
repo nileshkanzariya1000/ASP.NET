@@ -67,11 +67,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ASP.NET.aspx" />
+    <Content Include="Assignment 1.1.aspx" />
+    <Content Include="Assignment 1.2.aspx" />
+    <Content Include="Assignment 1.3.aspx" />
+    <Content Include="Assignment 1.4.aspx" />
     <Content Include="calculator.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ASP.NET.aspx.cs">
+      <DependentUpon>ASP.NET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ASP.NET.aspx.designer.cs">
+      <DependentUpon>ASP.NET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment 1.1.aspx.cs">
+      <DependentUpon>Assignment 1.1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assignment 1.1.aspx.designer.cs">
+      <DependentUpon>Assignment 1.1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment 1.2.aspx.cs">
+      <DependentUpon>Assignment 1.2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assignment 1.2.aspx.designer.cs">
+      <DependentUpon>Assignment 1.2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment 1.3.aspx.cs">
+      <DependentUpon>Assignment 1.3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assignment 1.3.aspx.designer.cs">
+      <DependentUpon>Assignment 1.3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment 1.4.aspx.cs">
+      <DependentUpon>Assignment 1.4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assignment 1.4.aspx.designer.cs">
+      <DependentUpon>Assignment 1.4.aspx</DependentUpon>
+    </Compile>
     <Compile Include="calculator.aspx.cs">
       <DependentUpon>calculator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
