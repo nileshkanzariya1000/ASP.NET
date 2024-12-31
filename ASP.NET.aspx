@@ -3,82 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar with Dropdown and Nested Assignment List</title>
+    <title>Assignments List</title>
     <style>
-        /* General page styles */
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
         }
 
-        /* Style for the navigation bar */
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
+        .container {
+            width: 80%;
+            margin: 0 auto;
         }
 
-        /* Navigation links styling */
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            height: 202px;
+        .main-list {
+            list-style-type: none;
         }
 
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Dropdown container */
-        .dropdown {
+        .menu-item {
             position: relative;
             display: inline-block;
+            margin: 10px;
         }
 
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
+        .menu-item > a {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
             border-radius: 4px;
         }
 
-        /* Dropdown item styling */
-        .dropdown-item {
-            padding: 8px 16px;
-            cursor: pointer;
+        .menu-item > a:hover {
+            background-color: #45a049;
         }
 
-        /* Hover effect for dropdown items */
-        .dropdown-item:hover {
-            background-color: #ddd;
+        .submenu {
+            list-style-type: none;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            padding: 10px 0;
+            border-radius: 4px;
+            min-width: 150px;
         }
 
-        /* Show dropdown menu on hover */
-        .dropdown:hover .dropdown-menu {
+        .submenu li a {
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .submenu li a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .menu-item:hover .submenu {
             display: block;
         }
 
-        /* Submenu styling */
-        .submenu {
+        .sub-submenu {
+            list-style-type: none;
             display: none;
             position: absolute;
-            left: 100%;
             top: 0;
-            background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            left: 100%;
+            background-color: #e9e9e9;
+            padding: 10px 0;
             border-radius: 4px;
+            min-width: 120px;
         }
 
-        .dropdown-item:hover .submenu {
+        .submenu li:hover .sub-submenu {
             display: block;
         }
 
@@ -86,31 +92,42 @@
 </head>
 <body>
 
-    <!-- Navigation bar -->
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-
-        <!-- Dropdown item for "Assignments" -->
-        <div class="dropdown">
-            <a href="#">Assignments</a>
-            <div class="dropdown-menu">
-                <div class="dropdown-item">
-                    Assignment 1
-                    <div class="submenu">
-                        <div class="dropdown-item">Assignment 1.1</div>
-                        <div class="dropdown-item">Assignment 1.2</div>
-                        <div class="dropdown-item">Assignment 1.3</div>
-                    </div>
-                </div>
-                <div class="dropdown-item">Assignment 2</div>
-                <div class="dropdown-item">Assignment 3</div>
-            </div>
-        </div>
-
-        <!-- Other links -->
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+    <div class="container">
+        <ul class="main-list">
+            <li class="menu-item">
+                <a href="#">Assignments</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Assignment 1</a>
+                        <ul class="sub-submenu">
+                            <li><a href="#">Assignment 1.1</a></li>
+                            <li><a href="#">Assignment 1.2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Assignment 2</a>
+                        <ul class="sub-submenu">
+                            <li><a href="#">Assignment 2.1</a></li>
+                            <li><a href="#">Assignment 2.2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Assignment 3</a>
+                        <ul class="sub-submenu">
+                            <li><a href="#">Assignment 3.1</a></li>
+                            <li><a href="#">Assignment 3.2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Assignment 4</a>
+                        <ul class="sub-submenu">
+                            <li><a href="#">Assignment 4.1</a></li>
+                            <li><a href="#">Assignment 4.2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
 </body>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>IMG20221118085421.jpg</ImageUrl>
+		<NavigateUrl>https://www.google.com</NavigateUrl>
+		<AlternateText>Advertisement 1</AlternateText>
+		<Impression>1000</Impression>
+		<Keyword>Keyword1</Keyword>
+		
+	</Ad>
+	<Ad>
+		<ImageUrl>1671939962612.jpg</ImageUrl>
+		<NavigateUrl>https://www.google.com</NavigateUrl>
+		<AlternateText>Advertisement 1</AlternateText>
+		<Impression>1000</Impression>
+		<Keyword>Keyword1</Keyword>
+
+	</Ad>
+	
+</Advertisements>
